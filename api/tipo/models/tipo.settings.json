@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipos",
+  "info": {
+    "name": "Tipo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreTipo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
