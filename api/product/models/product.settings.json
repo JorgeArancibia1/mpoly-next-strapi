@@ -33,7 +33,7 @@
     },
     "imagen": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "estado": {
       "type": "string",
