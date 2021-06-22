@@ -27,12 +27,12 @@ module.exports = {
       const data = {
         producto: product.id,
         user: idUser,
-        totalPayment,
+        totalCompra: totalPayment,
         idPayment: charge.id,
         metodoDespacho,
         metodoCompra
       }
-      const validData = await strapi.entityValidator.validateEntity(
+      const validData = await strapi.entityValidator.validateEntityCreation(
         strapi.models.order,
         data
       );
