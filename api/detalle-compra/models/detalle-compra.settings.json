@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "detalle_compras",
+  "info": {
+    "name": "DetalleCompra",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "totalCompra": {
+      "type": "biginteger"
+    },
+    "cantidadProductosComprados": {
+      "type": "integer"
+    },
+    "productosAComprar": {
+      "type": "json"
+    },
+    "metodoDespacho": {
+      "type": "string"
+    },
+    "metodoCompra": {
+      "type": "string"
+    },
+    "idPayment": {
+      "type": "string"
+    },
+    "producto": {
+      "model": "product"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
