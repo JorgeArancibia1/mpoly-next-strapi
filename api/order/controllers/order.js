@@ -10,6 +10,7 @@ module.exports = {
   async create(ctx) {
     const { token, products, idUser, metodoDespacho, metodoCompra} = ctx.request.body;
     console.log("id user => ", idUser)
+    console.log("ctx.reques.body => ",ctx.request.body)
     let totalPayment = 0;
     products.forEach((product) => {
       totalPayment = totalPayment + product.precio;
