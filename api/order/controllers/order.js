@@ -31,8 +31,9 @@ module.exports = {
         totalCompra: totalPayment,
         idPayment: charge.id,
         metodoDespacho,
-        metodoCompra
+        metodoCompra,
       }
+
       const validData = await strapi.entityValidator.validateEntityCreation(
         strapi.models.order,
         data
