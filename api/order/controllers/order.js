@@ -27,7 +27,7 @@ module.exports = {
     for await(const product of products){
       const data = {
         producto: product.id,
-        user: idUser,
+        users_permissions_user: idUser,
         totalCompra: totalPayment,
         idPayment: charge.id,
         metodoDespacho,

@@ -673,6 +673,9 @@
               "fechaVenta": {
                 "type": "string"
               },
+              "users_permissions_user": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },

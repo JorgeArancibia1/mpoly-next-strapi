@@ -76,6 +76,10 @@
     },
     "fechaVenta": {
       "type": "datetime"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

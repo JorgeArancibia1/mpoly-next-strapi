@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/28/2021 1:10:17 AM"
+    "x-generation-date": "06/30/2021 1:36:22 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4967,6 +4967,9 @@
               "fechaVenta": {
                 "type": "string"
               },
+              "users_permissions_user": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5269,6 +5272,9 @@
                 "type": "string"
               },
               "fechaVenta": {
+                "type": "string"
+              },
+              "users_permissions_user": {
                 "type": "string"
               },
               "published_at": {
@@ -5575,6 +5581,96 @@
             "type": "string",
             "format": "date-time"
           },
+          "users_permissions_user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "lastname2": {
+                "type": "string"
+              },
+              "RUT": {
+                "type": "string"
+              },
+              "phoneNumber": {
+                "type": "integer"
+              },
+              "region": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "comuna": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "homeNumber": {
+                "type": "integer"
+              },
+              "homeType": {
+                "type": "string"
+              },
+              "block": {
+                "type": "string"
+              },
+              "nDepto": {
+                "type": "integer"
+              },
+              "floor": {
+                "type": "integer"
+              },
+              "nivel": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5630,6 +5726,9 @@
           "fechaVenta": {
             "type": "string",
             "format": "date-time"
+          },
+          "users_permissions_user": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
